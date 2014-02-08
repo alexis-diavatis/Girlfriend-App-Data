@@ -1,0 +1,489 @@
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button,
+.primary-toolbar .button.raised.linked,
+.primary-toolbar.toolbar .button.raised,
+.primary-toolbar.toolbar .button.raised.linked,
+.primary-toolbar.toolbar .raised .button,
+
+.primary-toolbar GtkComboBox .button,
+.primary-toolbar.toolbar GtkComboBox .button {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.06),
+                                      alpha(white, 0.00) 49%,
+                                      alpha(black, 0.0) 51%,
+                                      alpha(black, 0.06)
+                                      ),
+                       linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 1.2),
+                                      shade(@theme_bg_color, 0.8)
+                                      );
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(white, 0.02) inset,
+				2px 0 alpha(white, 0.02) inset;
+	transition: 260ms ease-in;
+}
+
+.primary-toolbar .button.raised:hover,
+.primary-toolbar .raised .button:hover,
+.primary-toolbar .button.raised.linked:hover,
+.primary-toolbar.toolbar .button.raised:hover,
+.primary-toolbar.toolbar .raised .button:hover,
+.primary-toolbar .button.raised:hover:first-child,
+.primary-toolbar .raised .button:hover:first-child,
+.primary-toolbar .button.raised.linked:hover:first-child,
+.primary-toolbar.toolbar .button.raised:hover:first-child,
+.primary-toolbar.toolbar .raised .button:hover:first-child,
+.primary-toolbar .button.raised:hover:last-child,
+.primary-toolbar .raised .button:hover:last-child,
+.primary-toolbar .button.raised.linked:hover:last-child,
+.primary-toolbar.toolbar .button.raised:hover:last-child,
+.primary-toolbar.toolbar .raised .button:hover:last-child,
+.primary-toolbar .button.raised:hover:only-child,
+.primary-toolbar .raised .button:hover:only-child,
+.primary-toolbar .button.raised.linked:hover:only-child,
+.primary-toolbar.toolbar .button.raised:hover:only-child,
+.primary-toolbar.toolbar .raised .button:hover:only-child,
+
+.primary-toolbar GtkComboBox .button:hover,
+.primary-toolbar.toolbar GtkComboBox .button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.06),
+                                      alpha(black, 0.00) 39%,
+                                      alpha(white, 0.0) 41%,
+                                      alpha(white, 0.03)
+                                      ),
+                       linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 1.15),
+                                      shade(@theme_bg_color, 0.75)
+                                      );
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+	transition: 200ms ease-in;
+}
+
+.primary-toolbar .button.raised:first-child,
+.primary-toolbar .raised .button:first-child,
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar.toolbar .button.raised:first-child,
+.primary-toolbar.toolbar .raised .button:first-child {
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.1) inset,
+				2px 0 alpha(black, 0.04) inset;
+}
+
+.primary-toolbar .button.raised:hover:first-child,
+.primary-toolbar .raised .button:hover:first-child,
+.primary-toolbar .button.raised.linked:hover:first-child,
+.primary-toolbar.toolbar .button.raised:hover:first-child,
+.primary-toolbar.toolbar .raised .button:hover:first-child {
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.1) inset,
+				2px 0 alpha(black, 0.04) inset;
+	transition: 200ms ease-in;
+}
+
+.primary-toolbar .button.raised:last-child,
+.primary-toolbar .raised .button:last-child,
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar.toolbar .button.raised:last-child,
+.primary-toolbar.toolbar .raised .button:last-child {
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+
+				1px 0 alpha(white, 0.02) inset,
+				2px 0 alpha(white, 0.02) inset,
+				-1px 0 alpha(black, 0.1) inset,
+				-2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:hover:last-child,
+.primary-toolbar .raised .button:hover:last-child,
+.primary-toolbar .button.raised.linked:hover:last-child,
+.primary-toolbar.toolbar .button.raised:hover:last-child,
+.primary-toolbar.toolbar .raised .button:hover:last-child {
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset,
+				-1px 0 alpha(black, 0.1) inset,
+				-2px 0 alpha(black, 0.02) inset;
+	transition: 200ms ease-in;
+}
+
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar.toolbar .button.raised:active,
+.primary-toolbar.toolbar .raised .button:active,
+.primary-toolbar .button.raised:active:only-child,
+.primary-toolbar .raised .button:active:only-child,
+.primary-toolbar .button.raised.linked:active:only-child,
+.primary-toolbar.toolbar .button.raised:active:only-child,
+.primary-toolbar.toolbar .raised .button:active:only-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.16),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.04)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.26);
+	 box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:first-child,
+.primary-toolbar .raised .button:active:first-child,
+.primary-toolbar .button.raised.linked:active:first-child,
+.primary-toolbar.toolbar .button.raised:active:first-child,
+.primary-toolbar.toolbar .raised .button:active:first-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.16),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.04)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.26);
+	 box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:last-child,
+.primary-toolbar .raised .button:active:last-child,
+.primary-toolbar .button.raised.linked:active:last-child,
+.primary-toolbar.toolbar .button.raised:active:last-child,
+.primary-toolbar.toolbar .raised .button:active:last-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.16),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.04)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.26);
+	 box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:hover,
+.primary-toolbar .raised .button:active:hover,
+.primary-toolbar .button.raised.linked:active:hover,
+.primary-toolbar.toolbar .button.raised:active:hover,
+.primary-toolbar.toolbar .raised .button:active:hover,
+.primary-toolbar .button.raised:active:hover:first-child,
+.primary-toolbar .raised .button:active:hover:first-child,
+.primary-toolbar .button.raised.linked:active:hover:first-child,
+.primary-toolbar.toolbar .button.raised:active:hover:first-child,
+.primary-toolbar.toolbar .raised .button:active:hover:first-child,
+.primary-toolbar .button.raised:active:hover:last-child,
+.primary-toolbar .raised .button:active:hover:last-child,
+.primary-toolbar .button.raised.linked:active:hover:last-child,
+.primary-toolbar.toolbar .button.raised:active:hover:last-child,
+.primary-toolbar.toolbar .raised .button:active:hover:last-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.2),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.08)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.4);
+	box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:backdrop,
+.primary-toolbar .raised .button:backdrop,
+.primary-toolbar .button.raised.linked:backdrop,
+.primary-toolbar.toolbar .button.raised:backdrop,
+.primary-toolbar.toolbar .button.raised.linked:backdrop,
+.primary-toolbar.toolbar .raised .button:backdrop,
+.primary-toolbar .button.raised:hover:backdrop,
+.primary-toolbar .raised .button:hover:backdrop,
+.primary-toolbar .button.raised.linked:hover:backdrop,
+.primary-toolbar.toolbar .button.raised:hover:backdrop,
+.primary-toolbar.toolbar .button.raised.linked:hover:backdrop,
+.primary-toolbar.toolbar .raised .button:hover:backdrop,
+
+.primary-toolbar GtkComboBox .button:backdrop,
+.primary-toolbar.toolbar GtkComboBox .button:backdrop,
+.primary-toolbar GtkComboBox .button:hover:backdrop,
+.primary-toolbar.toolbar GtkComboBox .button:hover:backdrop {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.04),
+                                      alpha(white, 0.00) 49%,
+                                      alpha(black, 0.0) 51%,
+                                      alpha(black, 0.04)
+                                      ),
+                       linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 0.9),
+                                      shade(@theme_bg_color, 0.6)
+                                      );
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.005) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(white, 0.02) inset,
+				2px 0 alpha(white, 0.02) inset;
+	transition: 260ms ease-in;
+}
+
+.primary-toolbar .button.raised:backdrop:first-child,
+.primary-toolbar .raised .button:backdrop:first-child,
+.primary-toolbar .button.raised.linked:backdrop:first-child,
+.primary-toolbar.toolbar .button.raised:backdrop:first-child,
+.primary-toolbar.toolbar .raised .button:backdrop:first-child,
+.primary-toolbar .button.raised:hover:backdrop:first-child,
+.primary-toolbar .raised .button:hover:backdrop:first-child,
+.primary-toolbar .button.raised.linked:hover:backdrop:first-child,
+.primary-toolbar.toolbar .button.raised:hover:backdrop:first-child,
+.primary-toolbar.toolbar .raised .button:hover:backdrop:first-child {
+	background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.04),
+                                      alpha(white, 0.00) 49%,
+                                      alpha(black, 0.0) 51%,
+                                      alpha(black, 0.04)
+                                      ),
+                       linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 0.9),
+                                      shade(@theme_bg_color, 0.6)
+                                      );
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.005) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.1) inset,
+				2px 0 alpha(black, 0.04) inset;
+}
+
+.primary-toolbar .button.raised:backdrop:last-child,
+.primary-toolbar .raised .button:backdrop:last-child,
+.primary-toolbar .button.raised.linked:backdrop:last-child,
+.primary-toolbar.toolbar .button.raised:backdrop:last-child,
+.primary-toolbar.toolbar .raised .button:backdrop:last-child,
+.primary-toolbar .button.raised:hover:backdrop:last-child,
+.primary-toolbar .raised .button:hover:backdrop:last-child,
+.primary-toolbar .button.raised.linked:hover:backdrop:last-child,
+.primary-toolbar.toolbar .button.raised:hover:backdrop:last-child,
+.primary-toolbar.toolbar .raised .button:hover:backdrop:last-child {
+	background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.04),
+                                      alpha(white, 0.00) 49%,
+                                      alpha(black, 0.0) 51%,
+                                      alpha(black, 0.04)
+                                      ),
+                       linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 0.9),
+                                      shade(@theme_bg_color, 0.6)
+                                      );
+    box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.005) inset,
+
+				1px 0 alpha(white, 0.02) inset,
+				2px 0 alpha(white, 0.02) inset,
+				-1px 0 alpha(black, 0.1) inset,
+				-2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:backdrop,
+.primary-toolbar .raised .button:active:backdrop,
+.primary-toolbar .button.raised.linked:active:backdrop,
+.primary-toolbar.toolbar .button.raised:active:backdrop,
+.primary-toolbar.toolbar .raised .button:active:backdrop,
+.primary-toolbar .button.raised:active:hover:backdrop,
+.primary-toolbar .raised .button:active:hover:backdrop,
+.primary-toolbar .button.raised.linked:active:hover:backdrop,
+.primary-toolbar.toolbar .button.raised:active:hover:backdrop,
+.primary-toolbar.toolbar .raised .button:active:hover:backdrop {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.12),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.02)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.16);
+	box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:backdrop:first-child,
+.primary-toolbar .raised .button:active:backdrop:first-child,
+.primary-toolbar .button.raised.linked:active:backdrop:first-child,
+.primary-toolbar.toolbar .button.raised:active:backdrop:first-child,
+.primary-toolbar.toolbar .raised .button:active:backdrop:first-child,
+.primary-toolbar .button.raised:active:hover:backdrop:first-child,
+.primary-toolbar .raised .button:active:hover:backdrop:first-child,
+.primary-toolbar .button.raised.linked:active:hover:backdrop:first-child,
+.primary-toolbar.toolbar .button.raised:active:hover:backdrop:first-child,
+.primary-toolbar.toolbar .raised .button:active:hover:backdrop:first-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.12),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.02)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.16);
+	box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}
+
+.primary-toolbar .button.raised:active:backdrop:last-child,
+.primary-toolbar .raised .button:active:backdrop:last-child,
+.primary-toolbar .button.raised.linked:active:backdrop:last-child,
+.primary-toolbar.toolbar .button.raised:active:backdrop:last-child,
+.primary-toolbar.toolbar .raised .button:active:backdrop:last-child,
+.primary-toolbar .button.raised:active:hover:backdrop:last-child,
+.primary-toolbar .raised .button:active:hover:backdrop:last-child,
+.primary-toolbar .button.raised.linked:active:hover:backdrop:last-child,
+.primary-toolbar.toolbar .button.raised:active:hover:backdrop:last-child,
+.primary-toolbar.toolbar .raised .button:active:hover:backdrop:last-child {
+	background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.12),
+                                      alpha(black, 0.0) 39%,
+                                      alpha(white, 0.0) 40%,
+                                      alpha(white, 0.02)
+                                      );
+	background-color: mix(@theme_bg_color, @theme_selected_bg_color, 0.16);
+	box-shadow: 0 -1px alpha(black, 0.02) inset,
+				0 -2px alpha(black, 0.02) inset,
+				0 -3px alpha(black, 0.02) inset,
+				0 -4px alpha(black, 0.02) inset,
+
+				0 1px alpha(white, 0.01) inset,
+				0 2px alpha(white, 0.01) inset,
+				0 3px alpha(white, 0.00) inset,
+
+				-1px 0 alpha(black, 0.26) inset,
+				1px 0 alpha(black, 0.02) inset,
+				2px 0 alpha(black, 0.02) inset;
+}

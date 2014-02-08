@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Numix Circle",
+      "update":  "Feb 4, 2014",
+      "description": "An icon set from Numix Project",
+      "colorVariance": "light",
+      "url":"http://numixproject.org/public/",
+      "license":"GPL",	
+      "author": {
+        "name":"Numix Project" 
+       },
+     "id": "ilg-numix-circle-i"
+    },
+	{
+      "name": "Moka",
+      "update":  "Feb 4, 2014",
+      "description": "Moka is a modern open-source design project with a goal of bringing a high quality visual experience to many platforms",
+      "colorVariance": "light",
+      "url":"http://mokaproject.com/",
+      "license":"GPL",	
+      "author": {
+        "name":"Moka Project" 
+       },
+     "id": "ilg-moka-i"
+    },
+	{
+      "name": "Faba",
+      "update":  "Feb 4, 2014",
+      "description": "Faba is a modern open-source design project with a goal of bringing a high quality visual experience to many platforms",
+      "colorVariance": "light",
+      "url":"http://mokaproject.com/",
+      "license":"GPL",	
+      "author": {
+        "name":"Moka Project" 
+       },
+     "id": "ilg-faba-i"
+    }
+]

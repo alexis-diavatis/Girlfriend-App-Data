@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=DeLorean-Dark-3.10-ALPHA
+Type=X-GNOME-Metatheme
+Comment=For the darker side of you
+Encoding=UTF-8
+GtkTheme=delorean-dark-3.10-ALPHA
+MetacityTheme=delorean-dark-3.10-ALPHA
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24

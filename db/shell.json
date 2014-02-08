@@ -1,0 +1,79 @@
+[
+    {
+      "name": "Tyr Niflheim",
+      "update":  "Feb 4, 2014",
+      "description": "A theme for gnome 3.10",
+      "colorVariance": "dark",
+      "url":"http://bimsebasse.deviantart.com/art/Tyr-gnome-shell-3-10-theme-347195334",
+      "license":"GPL",	
+      "author": {
+        "name":"bimsebasse" 
+       },
+     "id": "ilg-tyr-niflheim-s"
+    },
+    {
+      "name": "Tyr Jord",
+      "update":  "Feb 4, 2014",
+      "description": "A theme for gnome 3.10",
+      "colorVariance": "dark",
+      "url":"http://bimsebasse.deviantart.com/art/Tyr-gnome-shell-3-10-theme-347195334",
+      "license":"GPL",	
+      "author": {
+        "name":"bimsebasse" 
+       },
+     "id": "ilg-tyr-jord-s"
+    },
+
+    {
+      "name": "Tyr Himmin",
+      "update":  "Feb 4, 2014",
+      "description": "A theme for gnome 3.10",
+      "colorVariance": "dark",
+      "url":"http://bimsebasse.deviantart.com/art/Tyr-gnome-shell-3-10-theme-347195334",
+      "license":"GPL",	
+      "author": {
+        "name":"bimsebasse" 
+       },
+     "id": "ilg-tyr-himmin-s"
+    },
+
+    {
+      "name": "XGnome Enhanced",
+      "update":  "Feb 4, 2014",
+      "description": "A small info for theme",
+      "colorVariance": "dark",
+      "url":"http://xterminador.deviantart.com/art/XGnome-Enhanced-3-10-394189091",
+      "license":"GPL",
+      "author": {
+        "name":"Author Name"
+       },
+     "id": "ilg-xgnome-enhanced-s"
+    },
+     {
+      "name": "Moka",
+      "update":  "Feb 4, 2014",
+      "description": "A GNOME Shell Theme from Moka Project!",
+      "colorVariance": "dark",
+      "url":"http://mokaproject.com/",
+      "license":"GPL",
+      "author": {
+        "name":"Moka Team"
+       },
+     "id": "ilg-moka-s"
+    },
+    {
+      "name": "Utopia",
+      "update":  "Feb 4, 2014",
+      "description": "A GNOME Shell Theme from Moka Project. Modern and elegant!",
+      "colorVariance": "dark",
+      "url":"http://mokaproject.com/",
+      "license":"GPL",
+      "author": {
+        "name":"Moka Team"
+       },
+     "id": "ilg-utopia-s"
+    }
+
+
+
+]

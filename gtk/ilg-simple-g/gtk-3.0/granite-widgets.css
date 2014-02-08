@@ -1,0 +1,277 @@
+/* Copyright 2011-2013 elementary LLC.
+*
+* This file is part of the elementary GTK theme.
+*
+* The elementary GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The elementary GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the elementary GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
+
+
+/* epiphany */
+
+EphyToolbar .entry:first-child,
+EphyToolbar .entry:focus:first-child,
+EphyToolbar .entry:backdrop:first-child {
+    border-image-width: 3px 0 4px 3px;
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+EphyToolbar .entry:last-child,
+EphyToolbar .entry:focus:last-child,
+EphyToolbar .entry:backdrop:last-child {
+    border-image-width: 3px 3px 4px 0;
+    border-left-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+EphyToolbar .entry:focus {
+    box-shadow: inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
+                inset 1px 1px alpha(@theme_selected_bg_color, 0.1),
+                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+}
+
+EphyToolbar .entry:focus:last-child {
+    box-shadow: inset 0 2px alpha(@theme_selected_bg_color, 0.1),
+                inset 0 1px alpha(@theme_selected_bg_color, 0.1),
+                inset -1px -1px alpha(@theme_selected_bg_color, 0.2);
+}
+
+EphyToolbar .location-entry .button {
+    color: @internal_element_color;
+    -GtkButton-child-displacement-y: 0;
+    border-image-source: -gtk-scaled(url("borders/generic-border.png"),url("borders/generic-border@2.png"));
+    border-image-slice: 3 3 4 3;
+    border-image-repeat: stretch;
+    border-width: 1px 1px 2px 1px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-shadow: inset 1px 0 @inset_dark_color,
+                inset 0 1px @entry_inset,
+                inset 0 2px alpha(@entry_inset, 0.4);
+}
+
+EphyToolbar .location-entry .button:backdrop,
+EphyToolbar .location-entry .button:backdrop:first-child,
+EphyToolbar .location-entry .button:backdrop:hover,
+EphyToolbar .location-entry .button:backdrop:hover:first-child {
+    border-image-source: -gtk-scaled (url("borders/generic-border-backdrop.png"),url("borders/generic-border-backdrop@2.png"));
+    box-shadow: none;
+    background-image: none;
+    background-color: @theme_unfocused_base_color;
+}
+
+EphyToolbar .location-entry .button:last-child {
+    border-image-width: 3px 3px 4px 0;
+    border-left-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+EphyToolbar .location-entry .button:first-child {
+    border-image-width: 3px 0 4px 3px;
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    /* flip the box-shadow division*/
+    box-shadow: inset -1px 0 @inset_dark_color,
+                inset 0 1px @entry_inset,
+                inset 0 2px alpha(@entry_inset, 0.4);
+}
+
+EphyToolbar .location-entry .button,
+EphyToolbar .location-entry .button:hover {
+    icon-shadow: none;
+    background-image: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from(@entry_background_a),
+                                    to(@entry_background_b));
+}
+
+EphyToolbar .location-entry .button:active,
+EphyToolbar .location-entry .button:active:hover {
+    background-image: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from(shade(@entry_background_a, 0.9)),
+                                    to(@entry_background_b));
+}
+
+EphyToolbar .location-entry .button:hover,
+EphyToolbar .location-entry .button:active {
+    color: @theme_text_color;
+}
+
+EphyNotebook.notebook {
+    border-width: 1px 0 1px 0;
+}
+
+EphyNotebook.notebook tab {
+    border-width: 0;
+}
+
+EphyToolbar.toolbar .button {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#ephy-page-menu-button.active-menu {
+    background-image: none;
+    background-color: @menu_bg_color;
+
+    border-image: none;
+    border-color: @menu_bg_color;
+    border-radius: 4px 4px 0 0;
+}
+
+EphyOverview GtkScrolledWindow {
+    background-color: @theme_base_color;
+}
+
+EphyOverview GtkScrolledWindow:backdrop {
+    background-color: @theme_unfocused_base_color;
+}
+
+/* sets top and bottom borders on the main scrolled window for toolbar visual
+ * division and search/downloadbar */
+EphyWindow.background EphyEmbed.vertical GtkScrolledWindow.frame {
+    border-color: @borders;
+    border-width: 1px 0;
+    border-radius: 0;
+}
+
+/* removes any border from the overview scrolled window, since it's overlaid */
+EphyWindow.background EphyEmbed.vertical EphyOverview .documents-scrolledwin {
+    border-style: none;
+}
+
+/* remove top and bottom borders from the main scrolled window when inside a notebook tab */
+EphyWindow.background EphyNotebook.notebook EphyEmbed.vertical GtkScrolledWindow {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+/* remove bottom borders from the  main scrolled window when no bars at the bottom of the screen are shown */
+EphyWindow.background EphyNotebook:last-child EphyEmbed.vertical GtkScrolledWindow,
+EphyWindow.background EphyNotebook.notebook:last-child {
+    border-bottom-width: 0;
+}
+
+/*************
+ * Statusbar *
+ ************/
+NautilusQueryEditor .toolbar {
+    padding-top: 3px;
+    padding-bottom: 4px;
+
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: @theme_bg_color;
+    
+    background-color: mix(@theme_bg_color, @theme_base_color, 0.5);
+
+}
+GtkStatusbar {
+    padding: 5px;
+background-image: @transparent;
+    
+    -GtkStatusbar-shadow-type: none;
+}
+GraniteWidgetsStatusBar {
+    padding: 3px;
+color: #f3f3f3;
+    text-shadow: 0 1px alpha (#000, 0.4);
+    icon-shadow: 0 1px alpha (#000, 0.4);
+
+    background-image: linear-gradient(to bottom,
+                                 #4d5055,
+                                  #313539
+                                  );
+
+    border-style:solid;
+    border-width: 1px 0 0 0;
+    border-top-color: shade (#686868, 0.52);
+
+    box-shadow: inset 0 1px 0 0 alpha (#fff, 0.20);
+}
+GraniteWidgetsStatusBar GtkImage,
+ GraniteWidgetsStatusBar GtkLabel{
+    background-color: @transparent;
+    color: #f3f3f3;
+}
+
+/***********
+ * Popover *
+ **********/
+
+GraniteWidgetsPopOver {
+
+    -GraniteWidgetsPopOver-arrow-width: 21;
+    -GraniteWidgetsPopOver-arrow-height: 10;
+    -GraniteWidgetsPopOver-border-radius: 5px;
+    -GraniteWidgetsPopOver-border-width: 1;
+    -GraniteWidgetsPopOver-shadow-size: 12;
+    
+    border: 1px solid alpha (#000, 0.3);
+    margin: 0;
+}
+
+.popover_bg {
+    background-color: #333;
+
+    background-image: linear-gradient(to bottom,
+                                  alpha (#f9f9f9, 0.97),
+                                  alpha (#f9f9f9, 0.97) 80%,
+                                  alpha (#f0f0f0, 0.97)
+                                  );
+
+    border: 1px solid alpha (#000, 0.3);
+}
+
+GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver * {
+    background-color: transparent;
+}
+
+GraniteWidgetsPopOver .button {
+    background-image: none;
+    background-color: transparent;    
+}
+
+GraniteWidgetsPopOver .button:active,
+GraniteWidgetsPopOver .button:hover:active {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+    border-color: shade (@base_color, 0.74);
+}
+
+.button.app {
+    border-width: 0;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.app:hover {
+    background-color: alpha (#000, 0.08);
+}
+.app:focus {
+    background-color: alpha (#000, 0.20);
+}

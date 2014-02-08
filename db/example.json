@@ -1,0 +1,33 @@
+[
+     
+    {
+      "name": "Adwaita Green Plus [req]",
+      "version": "1.0.0",
+      "update":  "Feb 4, 2014 [req]",
+      "description": "A Green Adwaita Theme [req]",
+      "colorVariance": "light [req | dark or light]",
+      "type": "gtk",
+      "gnome": "3,10",
+      "url":"http://mytheme.org [req]",
+      "git": " ",
+      "maintainer": "alex",
+      "license":"GPL",
+      "packs":"",
+      "hasVariants":"",
+
+      "author": {
+        "name":"Author Name [req]",
+        "email": "author email",
+        "facebook": "author fb profile",
+        "twitter": "author twitter profile",
+        "google": "author google profile",
+        "deviant": "author deviant profile"
+       },
+
+     "id": "ilg-adwaita-grn-g [req]",
+     "_comment": ""
+
+
+    }
+]
+
